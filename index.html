@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [
+        "http://www.mega-site.com.ua/",
+        "https://itlama.com/",
+        "https://wezom.com.ua/",
+        "https://mahaon.ua/",
+        "https://artjoker.ua/",
+        "https://promodex.net/",
+        "https://artlanding.net/",
+        "https://ddaproduction.com/",
+        "https://tezart.ua/",
+        "https://www.whiteweb.ua/"
+      ];
+      var arrMatch = arr.map(e => e.match(/^(.{1,}:\/{1,}|)(.{1,})(\/)/));
+      var res = arrMatch.map(e => e[2]);
+      console.log(res);
+    </script>
+  </body>
+</html>
